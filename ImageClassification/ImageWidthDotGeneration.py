@@ -54,7 +54,7 @@ def generateTrainFiles():
     allPictures = []
     allLabels = []
     copy_possible_groups = number_of_possible_groups.copy()
-    for i in range(16000):
+    for i in range(900):
         group_number_selected = copy_possible_groups[random.randint(0, (len(copy_possible_groups)-1))]
         copy_possible_groups.remove(group_number_selected)
         if len(copy_possible_groups) == 0:
